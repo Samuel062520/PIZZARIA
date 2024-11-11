@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!--INICIO CSS ICONES-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!--INICIO CSS SLIDE-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="shortcut icon" href="assets/img/msFavicon.png" type="image/x-icon">
+<title>Pizzaria</title>
+</head>
+<body>
+
+<!--INICIO DO CABEÇALHO DO SITE-->
+<header class="topo-site">
+
+    <!--INICIO LOGO DO SITE-->
+    <a href="index.html" class ="logo"> 
+        <i class="fas fa-pizza-slice"></i>
+        Pizzaria CS 
+    </a>
+    <!--FIM LOGO DO SITE-->
+
+    <!--INICIO MENU DO SITE-->
+    <nav class="menu-site">
+        <a href="index.html">Inicio</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="menu.html">Cardápio</a>
+        <a href="loja.html">Montar Pedido</a>
+        <a href="blog.html">Blog</a>
+        <a href="contatos.html">Fale Conosco</a>    
+    </nav>
+    <!--FIM DO MENU DO SITE-->
+
+    <!--INICIO DO ICONES DO SITE-->
+    <div class="icons">
+        <div id="cart" class="fas fa-shopping-cart"></div>
+        <div id="login" class="fas fa-user"></div>
+        <div id="menu" class="fas fa-bars"></div>
+    </div>
+    <!--FIM DO ICONES DO SITE-->
+
+    <!--INICIO DO CARRINHOS DE COMPRAS TOPO DO SITE-->
+<div class="carrinho">
+
+    <!--INICIO ITEM CARRINHO DE COMPRA DO SITE-->
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/img/carrinho/carrinho-1.png" alt="">
+        <div class="content">
+            <h3>Pizza Calabresa</h3>
+            <span class="quantidade"> 1</span>
+            <span class="multiplica"> x</span>
+            <span class="valor"> R$ 77,77</span>
+        </div>
+    </div>
+    <!--FIM ITEM CARRINHO DE COMPRA DO SITE-->
+
+    <!--INICIO ITEM CARRINHO DE COMPRA DO SITE-->
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/img/carrinho/carrinho-2.png" alt="">
+        <div class="content">
+            <h3>Pizza Frango</h3>
+            <span class="quantidade"> 1</span>
+            <span class="multiplica"> x</span>
+            <span class="valor"> R$ 77,77</span>
+        </div>
+    </div>
+    <!--FIM ITEM CARRINHO DE COMPRA DO SITE-->
+
+    <!--INICIO ITEM CARRINHO DE COMPRA DO SITE-->
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="assets/img/carrinho/carrinho-3.png" alt="">
+        <div class="content">
+            <h3>Pizza Strogonoff</h3>
+            <span class="quantidade"> 1</span>
+            <span class="multiplica"> x</span>
+            <span class="valor"> R$ 77,77</span>
+        </div>
+    </div>
+    <!--FIM ITEM CARRINHO DE COMPRA DO SITE-->
+
+    <h3 class="total">Total: R$ 777,77</h3>
+    <a href="" class="btn"> Ir para o carrinho</a>
+
+</div>
+<!--FIM DO CARRINHOS DE COMPRAS TOPO DO SITE-->
+   
+
+<!--INICIO LOGIN TOPO DO SITE-->
+<form action="" method="post" class="login-form">
+    <h3>Acesse sua conta</h3>
+    <input type="email" name="email" class="box" placeholder="Seu E-mail">
+    <input type="password" name="senha" class="box" placeholder="Sua Senha">
+        <div class="lembrar-senha">
+           <input type="checkbox" name="lembrar" id="relembrar">
+           <label for="relembrar">Me lembrar da senha</label> 
+        </div>
+    <button type="submit" name="sendLogin" class="btn">Acessar</button>
+</form>
+<!--FIM LOGIN TOPO DO SITE-->
+</header>
+
+<!-- Inicio topo da pagina-->
+ <div class="topo-pagina">
+    <h1>Menu Pizzaria</h1>
+    <p><a href="index.html" title="sobre nos">Inicio>></a> Menu</p>
+ </div>
+<!-- Fim topo da pagina-->
+
+<!-- Incio Slide do Menu -->
+<section class="menu">
+<!--Slide principal-->
+<div class="swiper menu-slide">
+
+    <div class="swiper-wrapper">
+<!--Inicio do item slide principal-->
+      <div class="swiper-slide slider">
+      <h3 class="titulo">Pizzas  </h3>
+
+      <div class="box-container">
+<!--Inicio sub item slide principal-->
+      <div class="box" data-name="pizza">
+        <div class="info">
+            <h3>Pizza de Frango</h3>
+            <p>Frango Fresquinho</p>
+        </div>
+        <div class="valor">R$77</div>
+      </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza de Calabresa</h3>
+        <p>Feito com a melhor calabresa do mercado</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza de Strogonoff</h3>
+        <p>Para amantes de Strogonoff</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza de Tomate Seco</h3>
+        <p>Tomates Secos na Hora!</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza de Frango com Catupiry</h3>
+        <p>Catupiry de otima qualidade</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza Portuguesa</h3>
+        <p>Pizza que veio de direto de Portugal!</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza Marguerita</h3>
+        <p>Sabor classico Italiano</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizza de Atum</h3>
+        <p>Atum pescado na hora!</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+    <div class="info">
+        <h3>Pizzas Doces</h3>
+        <p>Para adoçar a amargura da Vida</p>
+    </div>
+    <div class="valor">R$77</div>
+  </div>
+<!--Fim sub item slide principal-->
+      </div> 
+
+      </div>
+<!--fim do slide principal-->
+
+<!--Inicio do item slide principal-->
+<div class="swiper-slide slider">
+    <h3 class="titulo">Bebidas  </h3>
+
+    <div class="box-container">
+<!--Inicio sub item slide principal-->
+    <div class="box" data-name="pizza">
+      <div class="info">
+          <h3>Pizza de Frango</h3>
+          <p>Pizza IEA!</p>
+      </div>
+      <div class="valor">R$77</div>
+    </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+    </div> 
+
+    </div>
+<!--fim do slide principal-->
+
+<!--Inicio do item slide principal-->
+<div class="swiper-slide slider">
+    <h3 class="titulo">Petiscos  </h3>
+
+    <div class="box-container">
+<!--Inicio sub item slide principal-->
+    <div class="box" data-name="pizza">
+      <div class="info">
+          <h3>Pizza de Frango</h3>
+          <p>Pizza IEA!</p>
+      </div>
+      <div class="valor">R$77</div>
+    </div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+<!--Inicio sub item slide principal-->
+<div class="box" data-name="pizza">
+  <div class="info">
+      <h3>Pizza de Frango</h3>
+      <p>Pizza IEA!</p>
+  </div>
+  <div class="valor">R$77</div>
+</div>
+<!--Fim sub item slide principal-->
+    </div> 
+
+    </div>
+<!--fim do slide principal-->
+    </div>
+
+<!--Inicio da paginacao do slide-->
+    <div class="swiper-pagination"></div>
+<!--Fim da paginacao do slide-->
+</div>    
+</section>
+
+<!-- Fim Slide do Menu -->
+
+ <!--INICIO JANELA MODAL-->
+<section class="menu-modal-container">
+
+    <div id="fechar" class="fas fa-times"></div>
+
+    <div class="menu-modal" data-target="pizza">
+        <h3>Pizza de Frango</h3>
+
+        <div class="estrelinhas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+
+        <p>A melhor pizza do mercado</p>
+
+        <div class="valor">R$ 77</div>
+        <a href="" class="btn">Adicionar ao Carrinho</a>
+
+    </div>
+
+</section>
+ <!--FIM JANELA MODAL-->
+
+
+
+
+<!-- Início do Rodapé -->
+<section class="rodape">
+    <div class="box-container">
+        <!-- Início dos itens do rodapé -->
+        <div class="box">
+            <h3>Pizzaria CS</h3>
+            <p>Estou dentro da Comunidade</p>
+            <div class="redes-sociais">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Faça seu pedido</h3>
+            <p>(11) 99999-9999</p>
+            <p>(11) 9999-9999</p>
+            <a href="cruzeiro:pizzas@gmail.com" title="Enviar e-mail para pizza@gmail.com" class="link">pizza@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>Localização</h3>
+            <p>
+                Rua das melhores Pizzas, nº 869<br>
+                Vila Lobos<br>
+                São Paulo - SP
+            </p>
+        </div>
+        <!-- Fim dos itens do rodapé -->
+    </div>
+    
+    <div class="direitos">
+        Criado pelo <span>Grupo PHP</span> Todos os direitos reservados!
+    </div>
+</section>
+<!-- Fim do Rodapé -->
+<!--INICIO JS DO SITE-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/ms.js"></script>
+</body>
+</html>
